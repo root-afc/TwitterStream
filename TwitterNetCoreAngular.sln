@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31612.314
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterNetCoreAngular", "TwitterNetCoreAngular\TwitterNetCoreAngular.csproj", "{F30FB17C-6F80-45F3-9332-C803D588B9FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F30FB17C-6F80-45F3-9332-C803D588B9FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F30FB17C-6F80-45F3-9332-C803D588B9FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F30FB17C-6F80-45F3-9332-C803D588B9FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F30FB17C-6F80-45F3-9332-C803D588B9FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BF2512B-39E6-4D34-98C9-492D26FF2780}
+	EndGlobalSection
+EndGlobal

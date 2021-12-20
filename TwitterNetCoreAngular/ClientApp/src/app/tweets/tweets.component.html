@@ -1,0 +1,63 @@
+<div style="display: flex; justify-content: center; padding-top: 1rem">
+  <div>
+    <p><u> <b>records: </b> </u> <b>{{data.length}}</b></p>
+  </div>
+</div>
+
+
+
+<div class="container" style="overflow: auto">
+
+  <div style="padding-top: 1rem; padding-bottom: 1rem">
+
+
+  </div>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <!--      <th scope="col">tweetID</th>-->
+        <th scope="col">tweet</th>
+        <th scope="col">username</th>
+        <th scope="col">linkTweet</th>
+        <th scope="col">name</th>
+        <th scope="col">description</th>
+        <th scope="col">profile_image_url</th>
+        <th scope="col">source</th>
+        <th scope="col">created_at</th>
+        <th scope="col">location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let i of data'>
+        <!-- <tr *ngFor='let i of data | orderBy: order: true'> -->
+        <!--      <th scope="row">{{i['tweet_ID']}}</th>-->
+        <th>{{i['text']}}</th>
+        <th>{{i['username']}}</th>
+        <th><a target="_blank" [href]="i['linkTweet']">{{i['linkTweet']}}</a></th>
+        <th>{{i['name']}}</th>
+        <th>{{i['description']}}</th>
+        <th><a target="_blank" [href]="i['profile_image_url']">{{i['profile_image_url']}}</a></th>
+        <th>{{i['source']}}</th>
+        <th style="white-space: nowrap">{{i['created_at'] | date: 'dd-MM-yyyy HH:mm:ss'}}</th>
+        <th>{{i['location']}}</th>
+      </tr>
+
+    </tbody>
+  </table>
+
+</div>
+
+<!--<div style="display: flex; justify-content: center; padding-top: 1rem; padding-bottom: 5rem">
+
+  <button (click)="next()" type="button" class="btn btn-outline-success">
+
+    <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-server" viewBox="0 0 16 16">
+      <path d="M1.333 2.667C1.333 1.194 4.318 0 8 0s6.667 1.194 6.667 2.667V4c0 1.473-2.985 2.667-6.667 2.667S1.333 5.473 1.333 4V2.667z"></path>
+      <path d="M1.333 6.334v3C1.333 10.805 4.318 12 8 12s6.667-1.194 6.667-2.667V6.334a6.51 6.51 0 0 1-1.458.79C11.81 7.684 9.967 8 8 8c-1.966 0-3.809-.317-5.208-.876a6.508 6.508 0 0 1-1.458-.79z"></path>
+      <path d="M14.667 11.668a6.51 6.51 0 0 1-1.458.789c-1.4.56-3.242.876-5.21.876-1.966 0-3.809-.316-5.208-.876a6.51 6.51 0 0 1-1.458-.79v1.666C1.333 14.806 4.318 16 8 16s6.667-1.194 6.667-2.667v-1.665z"></path>
+    </svg>
+
+  </button>
+
+</div>-->
